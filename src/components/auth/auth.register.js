@@ -13,8 +13,8 @@ function Register() {
   const handleSubmit = (inputmethod, pathURL, delivery) => {
     axios({
       method: inputmethod,
-      url: `http://localhost:4000/${pathURL}`,
-      // url: `https://clone-app-hcmus.herokuapp.com/${pathURL}`,
+      // url: `http://localhost:4000/${pathURL}`,
+      url: `https://clone-app-hcmus.herokuapp.com/${pathURL}`,
       data: delivery,
       header: {
         "Content-Type": "application/json",
